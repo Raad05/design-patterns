@@ -13,6 +13,10 @@ public class Main {
         account.deposit(10);
         account.withdraw(5);
         System.out.println(account.getBalance());
+
+        // abstraction example
+        var mailService = new MailService();
+        mailService.sendMail();
     }
 
     public static TaxCalculator getCalculator() {
