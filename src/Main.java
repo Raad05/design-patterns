@@ -17,8 +17,13 @@ public class Main {
         // abstraction example
         var mailService = new MailService();
         mailService.sendMail();
+
+        // inheritance example
+        var textbox = new TextBox();
+        textbox.enable();
     }
 
+    // coupling example
     public static TaxCalculator getCalculator() {
         return new TaxCalculator2024();
     }
