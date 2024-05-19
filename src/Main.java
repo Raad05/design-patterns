@@ -21,10 +21,19 @@ public class Main {
         // inheritance example
         var textbox = new TextBox();
         textbox.enable();
+
+        // polymorphism example
+        var checkbox = new CheckBox();
+        drawUIControl(checkbox);
     }
 
     // coupling example
     public static TaxCalculator getCalculator() {
         return new TaxCalculator2024();
+    }
+
+    // polymorphism example
+    public static void drawUIControl(UIControl control) {
+        control.draw();
     }
 }
