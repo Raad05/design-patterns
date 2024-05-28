@@ -1,5 +1,6 @@
 import memento.Editor;
 import memento.History;
+import singleton.Car;
 import state.BrushTool;
 import state.Canvas;
 import state.EraserTool;
@@ -33,7 +34,11 @@ public class Main {
         var checkbox = new CheckBox();
         drawUIControl(checkbox);
 
-        // memento pattern
+        // singleton pattern
+        var car1 = Car.getCar("Nissan", "Skyline R34");
+        System.out.println("Car: " + car1.name + " || Model: " + car1.model + ".");
+
+        // memento pattern example
         var editor = new Editor();
         var history = new History();
 
